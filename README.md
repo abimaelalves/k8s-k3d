@@ -35,7 +35,6 @@ Para listar os nós do cluster:
 kubectl get nodes
 ```
 
-Deletar um Cluster
 Para deletar um cluster, execute o comando:
 
 ```bash
@@ -43,6 +42,7 @@ k3d cluster delete NOME_DO_CLUSTER
 ```
 
 Criar um Cluster com Recursos de Control Plane e Worker Nodes
+
 Para criar um cluster com 3 servidores (control plane) e 3 agentes (worker nodes):
 
 ```bash
