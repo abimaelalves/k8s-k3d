@@ -6,7 +6,7 @@
 
 ## Instalar k3d
 
-Para instalar o k3d, siga as instruções na [página de lançamentos do k3d](https://k3d.io/v5.6.3/#releases).
+Para instalar o k3d, siga as instruções na [página do k3d](https://k3d.io/v5.6.3/#releases).
 
 ## Criar um Cluster Kubernetes Simples
 
