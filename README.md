@@ -53,7 +53,7 @@ Criar Redirecionamento de Porta para o Loadbalancer do Cluster
 
 Para criar um cluster com redirecionamento de porta para o loadbalancer:
 
-Observação: Usando -p "8080:30000@loadbalancer", o loadbalancer será o container criado automaticamente pelo Docker. Estamos criando um mapeamento de entrada pela porta 8081
+Observação: Usando -p "8081:30000@loadbalancer", o loadbalancer será o container criado automaticamente pelo Docker. Estamos criando um mapeamento de entrada pela porta 8081
 
 ```bash
 k3d cluster create meucluster --servers 3 --agents 3 -p "8081:30000@loadbalancer"
