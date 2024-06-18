@@ -14,7 +14,7 @@ Para criar um cluster Kubernetes simples com k3d, execute o comando:
 
 ```bash
 k3d cluster create NOME_DO_CLUSTER
-```bash
+```
 
 k3d cluster list
 
