@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: meureplicaset
+spec:
+  replicas: 1
+  selector:
+    matchLabels:           
+      app: web             # O rótulo 'app: web' no selector deve coincidir com o rótulo especificado no template para que o ReplicaSet gerencie esses pods.
+  template:
+    metadata:
+      labels:              
+        app: web           # Este rótulo 'app: web' no template deve coincidir com o rótulo no selector acima para garantir que os pods sejam gerenciados por este ReplicaSet.
+    spec:
+      containers:
+      - name: web
+        image: kubedevio/web-color:blue
+        ports:
+          - name: http
+            containerPort: 80
+            protocol: TCP

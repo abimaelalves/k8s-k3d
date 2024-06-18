@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod1
+  labels:             # Definindo a marcação (label) do Pod
+    app: web          # O rótulo 'app: web' é usado para categorizar este Pod como parte da aplicação 'web'
+    versao: blue      # O rótulo 'versao: blue' indica que este Pod está executando a versão 'blue' da aplicação
+spec:
+  containers:
+    - name: web
+      image: kubedevio/web-color:blue
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod2
+  labels:             # Definindo a marcação (label) do Pod
+    app: web          # O rótulo 'app: web' é usado para categorizar este Pod como parte da aplicação 'web'
+    versao: green     # O rótulo 'versao: green' indica que este Pod está executando a versão 'green' da aplicação
+spec:
+  containers:
+    - name: web
+      image: kubedevio/web-color:green
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
