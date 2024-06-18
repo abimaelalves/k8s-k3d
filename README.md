@@ -1,4 +1,4 @@
-# Configuração do Cluster Kubernetes com k3d
+# Cluster Kubernetes com k3d
 
 ## Pré-requisitos
 
