@@ -1,24 +1,22 @@
-# Pre requisitos:
-docker
+# Configuração do Cluster Kubernetes com k3d
 
-# Instalar k3d:
-https://k3d.io/v5.6.3/#releases
+## Pré-requisitos
 
-# Criar cluster k8s (Simples):
+- Docker
+
+## Instalar k3d
+
+Para instalar o k3d, siga as instruções na [página de lançamentos do k3d](https://k3d.io/v5.6.3/#releases).
+
+## Criar um Cluster Kubernetes Simples
+
+Para criar um cluster Kubernetes simples com k3d, execute o comando:
+
+```bash
 k3d cluster create NOME_DO_CLUSTER
 
-# Infos do cluster:
 k3d cluster list
+
 kubectl cluster-info
+
 kubectl get nodes
-
-# Deletar cluster:
-k3d cluster delete NOME_DO_CLUSTER
-
-# Criar cluster com recursos de control plane e worker node:
-k3d cluster create meucluster --servers 3 --agents 3
-
-# Criar redirecionamento de porta para o loadbalancer do cluster:
-k3d cluster create meucluster --servers 3 --agents 3 -p "808:30000@loadbalancer"
-    obs: -p "8080:30000@loadbalancer" o loadbalancer seria o container que docker cria automaticamente, ou seja estamos criando um mapeamento de entrada pela porta 8080
-
