@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v1        # Vericar versao da api referente ao manifesto de pod atraves do comando (kubectl api-resources)
 kind: Pod
 metadata:
   name: meupod1

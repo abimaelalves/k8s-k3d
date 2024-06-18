@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v1      # Vericar versao da api referente ao manifesto de deployment atraves do comando (kubectl api-resources)
 kind: Deployment         # Embora a estrutura seja semelhante à de um ReplicaSet, o Deployment oferece funcionalidades adicionais, como a capacidade de fazer atualizações de maneira declarativa e rollback automático.
 metadata: 
   name: meudeployment

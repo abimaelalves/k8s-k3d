@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v1       # Vericar versao da api referente ao manifesto de replicaset atraves do comando (kubectl api-resources)
 kind: ReplicaSet
 metadata: 
   name: meureplicaset
